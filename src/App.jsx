@@ -1,60 +1,10 @@
 import React, { useState } from 'react'
 import Navbar from './component/Navbar'
 import Productdata from './component/Productdata'
-
+import data from '../utils/Data'
 
 const App = () => {
-  const [data,setData] = useState([
-    {
-      title:"Dairy, Bread & Eggs",
-      card:[
-        {
-          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5734b087-3ad9-485f-bbe2-52079cd9e35d.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        },
-          {
-            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        },
-          {
-            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        },
-          {
-            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/43831b4b-a5a5-4e21-a1de-0afec28dd648.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        },
-          {
-            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5809737b-81af-44f4-8bf6-efbecba57082.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        },
-          {
-            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
-          time:"12 MINS",
-          desc:"Amul Taaza Toned Milk",
-          quantity:"500 ml",
-          price:"28 Rs"
-        }
-      ]
-        
-      
-    }
-  ])
+ 
   return (
     <div className='h-screen w-full flex flex-col items-center  '>
       <Navbar/>
@@ -92,7 +42,12 @@ const App = () => {
           )
         })}
      </div>
-    <Productdata product={data}/>
+
+      {data.map((val,index)=>{
+        return(
+          <Productdata product={data[index]}/>
+        )
+      })}
     </div>
   )
 }

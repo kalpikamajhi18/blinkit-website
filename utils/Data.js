@@ -1,0 +1,356 @@
+
+ const data = [
+    {
+      title:"Dairy, Bread & Eggs",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5734b087-3ad9-485f-bbe2-52079cd9e35d.png",
+          time:"12 MINS",
+          desc:"Amul Taaza Toned Milk",
+          quantity:"500 ml",
+          price:"₹28"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/628c97e0-5ed4-425d-a667-1d3bfa6f0bde.png",
+          time:"12 MINS",
+          desc:"Amul Gold Full Cream Milk",
+          quantity:"500 ml",
+          price:"₹34"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3af56c86-9a93-4d0c-a8d5-cf38493e4120.png",
+          time:"12 MINS",
+          desc:"Amul Masti Pouch Curd",
+          quantity:"390 g",
+          price:"₹35"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/43831b4b-a5a5-4e21-a1de-0afec28dd648.png",
+          time:"12 MINS",
+          desc:"Yolkers Classic White Eggs (6 pieces)",
+          quantity:"6 pcs",
+          price:"₹50"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5809737b-81af-44f4-8bf6-efbecba57082.png",
+          time:"12 MINS",
+          desc:"The Oven Classics Atta / Wheat Bread",
+          quantity:"380 g",
+          price:"₹35"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/613787ac-f983-4cfb-b534-e219c8d47b39.png",
+          time:"12 MINS",
+          desc:"Amul Salted Butter",
+          quantity:"100 g",
+          price:"₹58"
+        }
+      ]
+        
+      
+    },
+
+
+    {
+      title:"Rolling paper & tobacco",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/500d636d-e59e-4835-a0e5-3d8e7ad26d3b.png",
+          time:"12 MINS",
+          desc:"Brown Ripper Rolling Paper 32...",
+          quantity:"32 pcs",
+          price:"₹120"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8d385b40-e78b-434a-962d-50ba667891bf.png",
+          time:"12 MINS",
+          desc:"Thins Pre-Rolled Rolling Paper - LIT",
+          quantity:"1 pack",
+          price:"₹25"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e9adf1c2-104e-4a39-a51f-c19a7db68e55.png",
+          time:"12 MINS",
+          desc:"Brown Rolling Paper Cones - Stash Pro",
+          quantity:"6 pcs",
+          price:"₹90"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5364507c-8f4b-4bcf-8663-eaedbc3f9fb6.png",
+          time:"12 MINS",
+          desc:"Brown Rolling Paper (King Size) - Stash Pro",
+          quantity:"32 pcs",
+          price:"₹50"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c5fb82ed-1138-47b4-a335-de08f02ad517.png",
+          time:"12 MINS",
+          desc:"Brown Rolling Paper + Roach with Crushing...",
+          quantity:"1 pack",
+          price:"₹222"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/a03c6553-b9af-44aa-b770-19e38f652d3f.png",
+          time:"12 MINS",
+          desc:"Flavoured Pre Rolled Cones - Sesh",
+          quantity:"6 rolls",
+          price:"₹119"
+        }
+      ]
+        
+      
+    },
+
+     {
+      title:"Snacks & Munchies",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3eae3870-eb2a-43eb-ad30-967d17f7d691.png",
+          time:"12 MINS",
+          desc:"Protein Chef Baked Coated Peanuts (Masa...",
+          quantity:"50 g",
+          price:"₹69"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/af0c0ce3-e062-4ea6-9a04-5097781adb9b.png",
+          time:"12 MINS",
+          desc:"Red Rock Deli kettle Chips (Basil Thai Swee...",
+          quantity:"58 g",
+          price:"₹51"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/555c3ab0-8c4b-4837-8e59-d6ffbfbbe1f9.png",
+          time:"12 MINS",
+          desc:"Protein Chef Himalayan Pink Salted Peanuts...",
+          quantity:"100 g",
+          price:"₹49"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ede9cc90-b8f0-4786-ada6-d40f8ba2b37c.png",
+          time:"12 MINS",
+          desc:"Red Rock Deli Potato Chips (Baked Olive &...",
+          quantity:"53 g",
+          price:"₹51"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e6154435-bbb6-45bb-963d-728dbef78b74.png",
+          time:"12 MINS",
+          desc:"Moi Soi White Rice Paper (22cm)",
+          quantity:"100 g",
+          price:"₹74"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ebadff31-2807-480d-92bb-f34f29b1bbd9.png",
+          time:"12 MINS",
+          desc:"Kab's Jackpot Fire Balls Snack",
+          quantity:"60 g",
+          price:"₹65"
+        }
+      ]
+        
+      
+    },
+
+     {
+      title:"Hookah",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ac378177-2f17-4dd8-b885-965ef83c24dd.png",
+          time:"12 MINS",
+          desc:"Coconut Shell Hookah Coal by Cocoyaya",
+          quantity:"250 g",
+          price:"₹150"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/18bfc670-0bc9-480b-9d02-8f9758a8bac3.png",
+          time:"12 MINS",
+          desc:"Indie Paan Hookah Flavor (Tobacco Free)... ",
+          quantity:"1 pc",
+          price:"₹100"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/669a9b3f-7d5e-434e-bec2-f976bc976916.png",
+          time:"12 MINS",
+          desc:"Coconut Hookah Coal Cubes by Stash Pro",
+          quantity:"250 g",
+          price:"₹180"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/aa46c706-33cf-45ca-97d7-cfd124484f05.png",
+          time:"12 MINS",
+          desc:"Magic Coal by Cocoyaya",
+          quantity:"1 pack",
+          price:"₹70"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c4ae0b90-a4d4-4e83-8ac2-d13b34aff09f.png",
+          time:"12 MINS",
+          desc:"Mouthpiece Hookah Pipe by Cocoyaya",
+          quantity:"40 pcs",
+          price:"₹100"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c57dbc89-08eb-4d02-bd6c-cc4c50aaaaef.png",
+          time:"12 MINS",
+          desc:"Paan Raas Herbal Hookah Flavor... ",
+          quantity:"50 g",
+          price:"₹100"
+        }
+      ]
+        
+      
+    },
+
+       {
+      title:"Mouth fresheners",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/de6cc2fb-de87-4112-a89e-cf7c263e2e3e.png",
+          time:"12 MINS",
+          desc:"GO DESi Tangy Imli Desi Popz Lollipop Candy",
+          quantity:"8 pcs",
+          price:"₹50"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8a165649-9050-491d-b77f-2e652f5f47e4.png",
+          time:"12 MINS",
+          desc:"Rajnigandha Silver Pearl Silver Coated Elaichi... ",
+          quantity:"5.75 g",
+          price:"₹60"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/d37286d5-2122-4fe2-97fa-5a809e8f7d6f.png",
+          time:"12 MINS",
+          desc:"Chandan Mint Saunf Mouth Freshener",
+          quantity:"100 g",
+          price:"₹50"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/9702590b-361b-4410-8a0b-a2fcebc44b43.png",
+          time:"12 MINS",
+          desc:"GO DESi Assorted Desi Popz Lollipop Candy",
+          quantity:"4 x 5 pcs",
+          price:"₹100"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/a58443ee-0c88-4f0b-ba6a-63628a069bdc.png",
+          time:"12 MINS",
+          desc:"Trident Tropical Twist Gum (Sugar Free)",
+          quantity:"14 pcs",
+          price:"₹105"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/42adad2f-205f-4af1-b787-b8f3484bdb4e.png",
+          time:"12 MINS",
+          desc:"Chandan Star 5 in 1 Mouth Freshener ",
+          quantity:"200 g",
+          price:"₹169"
+        }
+      ]
+        
+      
+    },
+
+
+    {
+      title:"Cold Drinks & Juices",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/rc-upload-1770356946958-165.png",
+          time:"12 MINS",
+          desc:"Coca-Cola Diet Coke Soft Drink",
+          quantity:"300 ml",
+          price:"₹40"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/52e0560a-de7b-4d27-b57a-c6bcf22945ec.png",
+          time:"12 MINS",
+          desc:"Bisleri Packaged Water ",
+          quantity:"5 ltr",
+          price:"₹68"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c9dd1824-0cd4-47d0-adc3-9367a0dec122.png",
+          time:"12 MINS",
+          desc:"Bisleri Packaged Water (1 l) - Pack of 12",
+          quantity:"12 x 1 ltr",
+          price:"₹214"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/76a28c0d-0821-40a3-9e5f-8f073ddc5694.png",
+          time:"12 MINS",
+          desc:"GAmul Masti Spiced Salted Buttermilk",
+          quantity:"200 ml",
+          price:"₹15"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/347cf10e-19e6-472d-b426-5a05891c5d84.png",
+          time:"12 MINS",
+          desc:"Pepsi Soft Drink",
+          quantity:"750 ml",
+          price:"₹40"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6f4bd423-1666-4d23-bf3d-db482be09608.png",
+          time:"12 MINS",
+          desc:"Red Bull Energy Drink ",
+          quantity:"250 ml",
+          price:"₹125"
+        }
+      ]
+        
+      
+    },
+
+     {
+      title:"Candies & Gums",
+      card:[
+        {
+          img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/7420f5a7-bd7b-4c2b-929f-d6034bb254a0.png",
+          time:"12 MINS",
+          desc:"CParle Poppins Candy",
+          quantity:"100 g",
+          price:"₹23"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/4f10d180-8987-4870-9c5a-04635e58005b.png",
+          time:"12 MINS",
+          desc:"Happydent Wave Sugarfree Mint Chewin... ",
+          quantity:"29 g",
+          price:"₹46"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/12822984-7022-44ea-9975-61892ee10652.png",
+          time:"12 MINS",
+          desc:"Chupa Chups Sour Bites Mixed Fruit Sour Candy",
+          quantity:"61.6 g",
+          price:"₹34"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/c33c2077-2019-4e33-9b12-79a9bdb8597a.png",
+          time:"12 MINS",
+          desc:"Parle Kismi Assorted Toffee",
+          quantity:"245.5 g",
+          price:"₹43"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6946d3a7-80f3-4a27-859d-65696c7af08b.png",
+          time:"12 MINS",
+          desc:"Chupa Chups Sour Belt Mixed Fruit Sour Candy",
+          quantity:"57.6 g",
+          price:"₹29"
+        },
+          {
+            img:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/add344f7-5485-459c-ba5e-cf2f65136c46.png",
+          time:"12 MINS",
+          desc:"Orbit Spearmint Flavour Sugar Free Chewing...",
+          quantity:"19.8 g",
+          price:"₹45"
+        }
+      ]
+        
+      
+    }
+  ]
+
+  export default data

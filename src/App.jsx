@@ -1,20 +1,24 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Navbar from './component/Navbar'
 import Productdata from './component/Productdata'
 import data from '../utils/Data'
 import Footer from './component/Footer'
+import { useNavigate, useOutletContext } from 'react-router-dom'
+import Product from './pages/Product'
+
 
 const App = () => {
- 
+ let navigate = useNavigate()
+ const[items,setItems] = useOutletContext()
   return (
-    <div className='h-screen w-full flex flex-col items-center  '>
-      <Navbar/>
+    <div className='min-h-screen w-full flex flex-col items-center  '>
+      
      <div className='flex flex-col items-center pt-20'>
-      <img className='w-[85%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2026-01/Frame-1437256605-2-2.jpg" alt="" />
+      <img onClick={()=>{navigate('/product')}} className='curson-pointer w-[85%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2026-01/Frame-1437256605-2-2.jpg" alt="" />
       <div className='w-[85%] mt-4 ml-8 flex items-center justify-start gap-5'>
-        <img className='w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg" alt="" />
-        <img className='w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/pet_crystal_WEB-1.png" alt="" />
-         <img className='w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/baby_crystal_WEB-1.png" alt="" />
+        <img onClick={()=>{navigate('/product')}} className='curson-pointer w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg" alt="" />
+        <img onClick={()=>{navigate('/product')}} className='curson-pointer w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/pet_crystal_WEB-1.png" alt="" />
+         <img onClick={()=>{navigate('/product')}} className='curson-pointer w-[26%] hover:scale-[1.025]' src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2026-01/baby_crystal_WEB-1.png" alt="" />
       </div>
      </div>
      <div className='w-[85%] mt-4 flex flex-wrap'>
@@ -46,11 +50,11 @@ const App = () => {
 
       {data.map((val,index)=>{
         return(
-          <Productdata product={data[index]}/>
+          <Productdata product={data[index]} items={items} setItems={setItems}/>
         )
       })}
 
-      <Footer/>
+      
     </div>
 
     

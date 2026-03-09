@@ -9,6 +9,9 @@ import route from './Router.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <RouterProvider router={route}/>
+
+    
   </StrictMode>,
 )

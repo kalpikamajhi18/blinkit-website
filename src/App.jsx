@@ -9,7 +9,7 @@ import Product from './pages/Product'
 
 const App = () => {
  let navigate = useNavigate()
- const[items,setItems] = useOutletContext()
+ const{items,setItems,price,setPrice} = useOutletContext()
   return (
     <div className='min-h-screen w-full flex flex-col items-center  '>
       
@@ -50,7 +50,7 @@ const App = () => {
 
       {data.map((val,index)=>{
         return(
-          <Productdata product={data[index]} items={items} setItems={setItems}/>
+          <Productdata product={data[index]} items={items} setItems={setItems} price={price} setPrice={setPrice}/>
         )
       })}
 

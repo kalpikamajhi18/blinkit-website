@@ -12,7 +12,7 @@ const Productdata = (props) => {
          
         { props.product.card.map((value)=>{
             return(
-              <Productcard data={value} items={props.items} setItems={props.setItems}/>  
+              <Productcard data={value} items={props.items} setItems={props.setItems} price={props.price} setPrice={props.setPrice}/>  
             )
         })}
     </div>

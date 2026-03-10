@@ -5,6 +5,7 @@ import Product from './pages/Product';
 import Search from './pages/Search';
 import Pimages from './pages/Pimages';
 import MainOutlet from '../MainOutlet';
+import Category from './pages/Category';
 
 let route=createBrowserRouter([
     {
@@ -15,11 +16,12 @@ let route=createBrowserRouter([
              
              {    path:"product",     element:<Product/>  },
              {      path:"s",      element:<Search/>  },
-             {      path:"p",       element:<Pimages/>   }
+             {      path:"p",       element:<Pimages/>   },
+              {      path:"category",       element:<Category/>   }
         ]
          
         
-    },
+    }
    
 
 ])

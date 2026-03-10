@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Navbar from './component/Navbar'
 import Productdata from './component/Productdata'
 import data from '../utils/Data'
@@ -10,6 +10,17 @@ import Product from './pages/Product'
 const App = () => {
  let navigate = useNavigate()
  const{items,setItems,price,setPrice} = useOutletContext()
+const[data,setData] = useState([])
+useEffect(()=>{
+  let fetchdata = async ()=>{
+        let resp = await fetch('http://localhost:3000/data')
+        let result = await resp.json()
+        setData(result)
+  }
+  fetchdata() 
+},[])
+
+
   return (
     <div className='min-h-screen w-full flex flex-col items-center  '>
       
@@ -41,16 +52,16 @@ const App = () => {
         "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png",
         "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png",
         "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png",
-        "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png"].map((value)=>{
+        "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png"].map((value,indx)=>{
           return(
-               <img className='w-[10%] hover:scale-[1.025]'  src={value} alt="" />
+               <img key={indx} className='w-[10%] hover:scale-[1.025]'  src={value} alt="" />
           )
         })}
      </div>
 
       {data.map((val,index)=>{
         return(
-          <Productdata product={data[index]} items={items} setItems={setItems} price={price} setPrice={setPrice}/>
+          <Productdata key={index} product={val} items={items} setItems={setItems} price={price} setPrice={setPrice}/>
         )
       })}
 
